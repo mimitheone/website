@@ -1,5 +1,8 @@
-//let first_answer = document.querySelector("#first_anwer");
-first_answer.innerHTML = document.querySelector("#first_answer") + 4;
-title.innerHTML = "Great1";
+const buttonA = document.querySelector("#button_A");
+const headingA = document.querySelector("#heading_A");
 
-alert(`Hello ${first_answer}, nice to see you!`);
+buttonA.onclick = () => {
+  const name = prompt("What is your name?");
+  alert(`Hello ${name}, nice to see you!`);
+  headingA.textContent = `Welcome ${name}`;
+};
