@@ -6,3 +6,6 @@ buttonA.onclick = () => {
   alert(`Hello ${name}, nice to see you!`);
   headingA.textContent = `Welcome ${name}`;
 };
+
+var number = "123";
+      document.getElementById("myText").innerHTML = number;
