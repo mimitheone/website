@@ -1,0 +1,40 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+.landing-bg-img {
+    position: relative;
+    min-height: 100vh;
+    background: url('/static/hotel_landing.jpg') no-repeat center center/cover;
+}
+.overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    /* Warm yellow/orange gradient overlay */
+    background: linear-gradient(120deg, rgba(255, 213, 102, 0.85) 0%, rgba(255, 183, 77, 0.85) 100%);
+    z-index: 1;
+}
+.landing-card {
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
+    background: rgba(255,255,255,0.97);
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px 0 rgba(255, 183, 77, 0.15);
+}
+.card {
+    border-radius: 1.2rem;
+}
+.btn-primary {
+    background: linear-gradient(90deg, #ffb74d 0%, #ffd766 100%);
+    color: #6d4c00;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background 0.2s;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background: linear-gradient(90deg, #ffd766 0%, #ffb74d 100%);
+    color: #6d4c00;
+} 
